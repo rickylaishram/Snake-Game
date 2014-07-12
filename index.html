@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+		<title>Snake | Ricky Laishram</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+		<!-- Custom styles for this template -->
+		<link href="/css/template.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="game-snake.css">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://rickylaishram.com/">Ricky Laishram</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://rickylaishram.com/?page_id=35">About</a></li>
+						<li><a href="https://github.com/rickylaishram">Github</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<ol class="breadcrumb">
+				<li><a href="/">Home</a></li>
+				<li><a href="/demo/">Demo</a></li>
+				<li class="active">Snake</li>
+			</ol>
+
+			<div class="starter-template">
+				</div>
+				<div class="row">
+					<div class="col-md-9 game-container"></div>
+					<div class="col-md-3">
+						<div class="panel panel-default game-panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Snake Game</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-6">High Score</div>
+									<div class="col-md-6" id="game-hiscore">0</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">Score</div>
+									<div class="col-md-6" id="game-score">0</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">Life</div>
+									<div class="col-md-6" id="game-life"></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">Length</div>
+									<div class="col-md-6" id="game-length">0</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">Multiplier</div>
+									<div class="col-md-6" id="game-multiplier">0</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group btn-group-md">
+											<button type="button" class="btn btn-default start-game">Start Game</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.starter-template-->
+
+		</div><!-- /.container -->
+
+		<!-- Game audio -->
+		<div class="hidden">
+			<audio src="sounds/hurt.wav" id="sound-hurt" volume="1.0"></audio>
+			<audio src="sounds/pickup.wav" id="sound-pickup" volume="1.0"></audio>
+			<audio src="sounds/powerup.wav" id="sound-powerup" volume="1.0"></audio>
+		</div>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="game-snake.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-47358707-1', 'laishram.com');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

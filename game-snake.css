@@ -1,0 +1,57 @@
+#game-container {
+	display: block;
+	background-color: rgba(0,0,0,1);
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgba(0,255,0,1);
+}
+
+.grid-line {
+	stroke-width: 1;
+	stroke: rgba(0,255,0,0.25);
+}
+
+.snake-body {
+	stroke: rgba(0,0,0,0);
+}
+
+.snake-dead {
+}
+
+.game-panel {
+	font-family: 'VT323', 'monospace';
+	font-size: 20px;
+	color: rgba(0,255,0,1);
+	background-color: rgba(0,0,0,1);
+	border-color: rgba(0,255,0,1);
+}
+.game-panel .panel-heading{
+	background-color: rgba(0,0,0,1);
+	border-color: rgba(0,255,0,1);
+}
+.game-panel .panel-title{
+	font-family: 'VT323', 'monospace';
+	font-size: 28px;
+	color: rgba(0,255,0,1);
+}
+.game-panel .row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.btn-default {
+	font-family: 'VT323', 'monospace';
+	font-size: 20px;
+	color: rgba(0,255,0,1);
+	background-color: rgba(0,0,0,1);
+	border-color: rgba(0,255,0,1);
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+	background-color: rgba(0,50,0,1);
+	color: rgba(0,255,0,1);
+	border-color: rgba(0,255,0,1);
+}
+.glyphicon-heart {
+	color: rgba(0,255,0,1);
+}
